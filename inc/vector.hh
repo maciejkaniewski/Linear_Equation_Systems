@@ -39,6 +39,7 @@ public:
      * @param other
      * @return Vector
      */
+    Vector operator+(const Vector& other) const;
 };
 
 /**
