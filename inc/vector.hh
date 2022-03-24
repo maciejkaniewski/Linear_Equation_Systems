@@ -4,6 +4,7 @@
 #define SIZE 3
 
 #include <iostream>
+#include <cmath>
 
 class Vector
 {
@@ -72,6 +73,14 @@ public:
      * @return double 
      */
     double operator*(const Vector &number) const;
+
+    /**
+     * @brief Calculate length of vector
+     * 
+     * @param vector 
+     * @return double 
+     */
+    double CalcuateVectorLength() const;
 };
 
 /**

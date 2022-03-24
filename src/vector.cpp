@@ -58,8 +58,7 @@ Vector Vector::operator*(const double &number) const
 
 double Vector::operator*(const Vector &other) const
 {
-    double result = 0;
-    double tmp;
+    double result = 0, tmp = 0;
 
     for (int i = 0; i < SIZE; i++)
     {
@@ -68,6 +67,18 @@ double Vector::operator*(const Vector &other) const
     }
 
     return result;
+}
+
+double Vector::CalcuateVectorLength() const
+{
+    double result = 0;
+
+    for (int i = 0; i < SIZE; i++)
+    {
+        result += pow(array[i], 2);
+    }
+
+    return sqrt(result);
 }
 
 std::ostream &operator<<(std::ostream &output, const Vector &vector)
