@@ -28,6 +28,17 @@ Vector Matrix::operator*(const Vector &vector) const
     return result;
 }
 
+void Matrix::Transpose()
+{
+    for (int i = 0; i < SIZE; i++)
+    {
+        for (int j = i + 1; j < SIZE; j++)
+        {
+            std::swap(matrix[i][j], matrix[j][i]);
+        }
+    }
+}
+
 std::ostream &operator<<(std::ostream &output, const Matrix &matrix)
 {
     for (int i = 0; i < SIZE; i++)

@@ -60,6 +60,12 @@ public:
      * @return Vector 
      */
     Vector operator*(const Vector &vector) const;
+
+    /**
+     * @brief Transpose matrix
+     * 
+     */
+    void Transpose();
     
 };
 
