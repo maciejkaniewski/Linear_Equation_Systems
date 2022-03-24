@@ -20,20 +20,39 @@ public:
     Matrix();
 
     /**
-     * @brief Access operator
+     * @brief Access selected row from matrix
      *
      * @param row
-     * @return Vector row of matrix
+     * @return Vector
      */
     Vector operator[](unsigned int row) const { return matrix[row]; }
 
     /**
-     * @brief Assigment operator
+     * @brief Modify selected row from matrix
      *
      * @param row
-     * @return Vector& row of matrix
+     * @return Vector&
      */
     Vector &operator[](unsigned int row) { return matrix[row]; }
+
+    /**
+     * @brief Access selected element from matrix
+     * 
+     * @param row 
+     * @param column 
+     * @return double 
+     */
+    double operator()(unsigned int row, unsigned int column) const { return matrix[row][column]; }
+
+    /**
+     * @brief Modify selected element form matrix
+     * 
+     * @param row 
+     * @param column 
+     * @return double& 
+     */
+    double &operator()(unsigned int row, unsigned int column) { return matrix[row][column]; }
+    
 };
 
 /**
