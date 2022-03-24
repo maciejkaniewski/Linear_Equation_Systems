@@ -23,7 +23,7 @@ public:
     Vector();
 
     /**
-     * @brief Access operator
+     * @brief Access selected element from vector
      *
      * @param index
      * @return double
@@ -31,7 +31,7 @@ public:
     double operator[](unsigned int index) const { return array[index]; }
 
     /**
-     * @brief Assigment operator
+     * @brief Modify selected element from vector
      *
      * @param index
      * @return double&
