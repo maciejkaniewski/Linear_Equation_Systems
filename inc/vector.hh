@@ -6,6 +6,10 @@
 #include <iostream>
 #include <cmath>
 
+/**
+ * @brief Model the concept of vector
+ * 
+ */
 class Vector
 {
 private:
