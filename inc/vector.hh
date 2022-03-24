@@ -48,6 +48,14 @@ public:
      * @return Vector
      */
     Vector operator-(const Vector &other) const;
+
+    /**
+     * @brief Divide vector by number
+     * 
+     * @param number
+     * @return Vector 
+     */
+    Vector operator/(const double &number) const;
 };
 
 /**

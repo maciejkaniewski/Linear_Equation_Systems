@@ -32,6 +32,18 @@ Vector Vector::operator-(const Vector &other) const
     return result;
 }
 
+Vector Vector::operator/(const double &number) const
+{
+    Vector result;
+
+    for (int i = 0; i < SIZE; i++)
+    {
+        result[i] = array[i] / number;
+    }
+    
+    return result;
+}
+
 std::ostream &operator<<(std::ostream &output, const Vector &vector)
 {
     for (int i = 0; i < SIZE; i++)
