@@ -60,10 +60,18 @@ public:
     /**
      * @brief Multiply vector by number
      *
-     * @param number
+     * @param other
      * @return Vector
      */
-    Vector operator*(const double &number) const;
+    Vector operator*(const double &other) const;
+
+    /**
+     * @brief Scalar multiplication of two vectors 
+     * 
+     * @param number
+     * @return double 
+     */
+    double operator*(const Vector &number) const;
 };
 
 /**
