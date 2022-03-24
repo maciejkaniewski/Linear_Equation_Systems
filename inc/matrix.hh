@@ -52,6 +52,14 @@ public:
      * @return double& 
      */
     double &operator()(unsigned int row, unsigned int column) { return matrix[row][column]; }
+
+    /**
+     * @brief Multiply matrix by vector
+     * 
+     * @param vector 
+     * @return Vector 
+     */
+    Vector operator*(const Vector &vector) const;
     
 };
 
