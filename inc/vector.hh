@@ -51,11 +51,19 @@ public:
 
     /**
      * @brief Divide vector by number
-     * 
+     *
      * @param number
-     * @return Vector 
+     * @return Vector
      */
     Vector operator/(const double &number) const;
+
+    /**
+     * @brief Multiply vector by number
+     *
+     * @param number
+     * @return Vector
+     */
+    Vector operator*(const double &number) const;
 };
 
 /**
