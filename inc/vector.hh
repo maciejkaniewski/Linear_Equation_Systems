@@ -39,7 +39,15 @@ public:
      * @param other
      * @return Vector
      */
-    Vector operator+(const Vector& other) const;
+    Vector operator+(const Vector &other) const;
+
+    /**
+     * @brief Subtract two vectors
+     *
+     * @param other
+     * @return Vector
+     */
+    Vector operator-(const Vector &other) const;
 };
 
 /**
