@@ -48,6 +48,13 @@ public:
      *
      */
     void Transpose();
+
+    /**
+     * @brief Calculate determinant of matrix
+     *
+     * @return double
+     */
+    double CalculateDeterminant(const Matrix &matrix, int n) const;
 };
 
 /**

@@ -39,6 +39,50 @@ void Matrix::Transpose()
     }
 }
 
+double Matrix::CalculateDeterminant(const Matrix &matrix, int n) const
+{
+    double determinant = 0;
+
+    if (n == 1)
+    {
+        return matrix[0][0];
+    }
+
+    if (n == 2)
+    {
+        return (matrix[0][0] * matrix[1][1]) - (matrix[0][1] * matrix[1][0]);
+    }
+
+    Matrix tmp;
+    int sign = 1;
+
+    for (int i = 0; i < n; i++)
+    {
+        int j = 0, k = 0;
+
+        for (int row = 0; row < n; row++)
+        {
+            for (int col = 0; col < n; col++)
+            {
+                if (row != 0 && col != i)
+                {
+                    tmp[j][k++] = matrix[row][col];
+                    if (k == n - 1)
+                    {
+                        k = 0;
+                        j++;
+                    }
+                }
+            }
+        }
+
+        determinant += sign * matrix[0][i] * CalculateDeterminant(tmp, n - 1);
+        sign = -sign;
+    }
+
+    return determinant;
+}
+
 std::ostream &operator<<(std::ostream &output, const Matrix &matrix)
 {
     for (int i = 0; i < SIZE; i++)
