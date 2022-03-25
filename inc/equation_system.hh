@@ -41,6 +41,13 @@ public:
      * @return Vector&
      */
     Vector &operator[](unsigned int row) { return A[row]; }
+
+    /**
+     * @brief Solve equation
+     * 
+     * @return Vector results
+     */
+    Vector SolveEquation();
 };
 
 /**
