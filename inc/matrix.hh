@@ -36,37 +36,18 @@ public:
     Vector &operator[](unsigned int row) { return matrix[row]; }
 
     /**
-     * @brief Access selected element from matrix
-     * 
-     * @param row 
-     * @param column 
-     * @return double 
-     */
-    double operator()(unsigned int row, unsigned int column) const { return matrix[row][column]; }
-
-    /**
-     * @brief Modify selected element form matrix
-     * 
-     * @param row 
-     * @param column 
-     * @return double& 
-     */
-    double &operator()(unsigned int row, unsigned int column) { return matrix[row][column]; }
-
-    /**
      * @brief Multiply matrix by vector
-     * 
-     * @param vector 
-     * @return Vector 
+     *
+     * @param vector
+     * @return Vector
      */
     Vector operator*(const Vector &vector) const;
 
     /**
      * @brief Transpose matrix
-     * 
+     *
      */
     void Transpose();
-    
 };
 
 /**
