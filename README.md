@@ -11,8 +11,8 @@ Linear Equation System is a project I realized in the second semester of my stud
   
 ## Features
 
-- Solves systems of equations with a user-defined number of unknowns
-- Loads equation systems as text files
+- Solve systems of equations with a user-defined number of unknowns
+- Load equation systems as text files
 
 ## Setup
 Prerequisites:
