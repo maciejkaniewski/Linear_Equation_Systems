@@ -67,12 +67,6 @@ The size of the equation can be changed in the `vector.hh` file:
 
 After changing the `SIZE` value, the program must be recompiled.
 
-### Data files format
-
-Based on the example below, you can create your own data files.
-
-![screenshot](./data/data.png "Data_file")
-
 ## Concepts I Learned
 
 - Class implementation,
